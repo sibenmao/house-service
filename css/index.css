@@ -1,0 +1,242 @@
+/* header start */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 1.173333rem;
+  padding: 0 .4rem;
+}
+
+.header > div {
+  height: 100%;
+} 
+
+.header .header-left {
+  width: 1.333333rem;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.173333rem;
+}
+
+.header .header-left .header-left-icon{
+  display: inline-block;
+  width: .266667rem;
+  height: .266667rem;
+  background-image: url(../images/icon/icon2x.png);
+  background-position: -2.8rem -5.333333rem;
+  /* 精灵图 缩小一倍 */
+  background-size: 11.733333rem auto;
+}
+
+.header .header-middle .logo {
+  font-size: 17px;
+  color: #ccc;
+  line-height: 1.173333rem;
+}
+
+.header .header-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 1.333333rem;
+}
+.header .header-right .header-right-icon {
+  display: inline-block;
+  width: .506667rem;
+  height: .506667rem;
+  background-image: url(../images/icon/icon2x.png);
+  background-repeat: no-repeat;
+  background-position: -3.853333rem -5.16rem;
+  /* 精灵图 缩小一倍 */
+  background-size: 11.733333rem auto;
+  cursor: pointer;
+}
+/* header end */
+
+/* banner start */
+.banner {
+  width: 100%;
+  height: 4.293333rem;
+  background:teal;
+}
+/* swiper start */
+.banner .swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+/* .banner .swiper-container .swiper-slide .swiper-slide-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 且不说兼容性， 能基本满足图片保持比例显示完全 ，但位置不精确，所以 ，如果仅做展示 还是建议背景图解决
+  object-fit: cover;
+} */
+
+.banner .swiper-container .swiper-wrapper .swiper-slide {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+}
+
+.banner .swiper-container .swiper-wrapper .swiper-slide:nth-child(2) {
+  background-image: url(../images/home/banner_1.jpg);
+}
+
+.banner .swiper-container .swiper-wrapper .swiper-slide:nth-child(1) {
+  background-image: url(../images/home/banner_2.png);
+  background-position: center;
+}
+
+.banner .swiper-container .swiper-wrapper .swiper-slide:nth-child(4) {
+  background-image: url(../images/home/banner_1.jpg);
+}
+
+.banner .swiper-container .swiper-wrapper .swiper-slide:nth-child(3) {
+  background-image: url(../images/home/banner_2.png);
+  background-position: center;
+}
+
+.banner .swiper-container .swiper-wrapper .swiper-slide .swiper-slide-link {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background:rgba(255,255,255,0);
+}
+/* swiper end */
+/* banner end */
+
+/* banner1 start */
+.banner1 {
+  height: 4.453333rem;
+  background:#fff;
+  overflow: hidden;
+}
+
+.banner1 .banner1-item {
+  display: flex;
+  flex-wrap: wrap;
+  width: 12.933333rem;
+}
+
+.banner1 .banner1-item .box-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  flex-shrink: 0;
+  height: 2.133333rem;
+  width: 1.733333rem;
+  margin-left: .426667rem;
+}
+.banner1 .banner1-item .box-item .icon {
+  display: block;
+  width: 1.173333rem;
+  height: 1.173333rem;
+  border-radius: 50%;
+  background: -webkit-linear-gradient(#F4A77A, #EB6B2B);
+  background: -o-linear-gradient(#F4A77A, #EB6B2B);
+  background: -moz-linear-gradient(#F4A77A, #EB6B2B);
+  background: linear-gradient(to top,#F4A77A, #EB6B2B);
+}
+
+.banner1 .banner1-item .box-item .icon::after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/icon/icon2x.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  border-radius: 50%;
+  /* 
+  由于精灵图是两倍图导出的png , 我们的设计图参考的是375的设计图, 所以这里精灵图也需要整个大图缩小一倍
+  精灵图宽:880px, 我们把背景图尺(background-size)寸除以2 ,然后转换rem就可以精确显示精灵图.
+  */
+  background-size: 11.733333rem auto;
+}
+
+.banner1 .banner1-item .box-item .icon-kongfang::after {
+  background-position: -1.173333rem 0;
+}
+
+.banner1 .banner1-item .box-item .icon-zhuanye::after {
+  background-position: -2.346667rem 0;
+}
+
+.banner1 .banner1-item .box-item .icon-chufang::after {
+  background-position: -3.52rem 0;
+}
+
+.banner1 .banner1-item .box-item .icon-diban::after {
+  background-position: -4.693333rem 0;
+}
+
+.banner1 .banner1-item .box-item .icon-kongfang {
+  background: -webkit-linear-gradient(#F380BA, #D74B8B);
+  background: -o-linear-gradient(#F380BA, #D74B8B);
+  background: -moz-linear-gradient(#F380BA, #D74B8B);
+  background: linear-gradient(to top,#F380BA, #D74B8B);
+}
+.banner1 .banner1-item .box-item .icon-zhuanye {
+  background: -webkit-linear-gradient(#FB9985, #E55239);
+  background: -o-linear-gradient(#FB9985, #E55239);
+  background: -moz-linear-gradient(#FB9985, #E55239);
+  background: linear-gradient(to top,#FB9985, #E55239);
+}
+.banner1 .banner1-item .box-item .icon-chufang {
+  background: -webkit-linear-gradient(#C3D46D, #A1C021);
+  background: -o-linear-gradient(#C3D46D, #A1C021);
+  background: -moz-linear-gradient(#C3D46D, #A1C021);
+  background: linear-gradient(to top,#C3D46D, #A1C021);
+}
+.banner1 .banner1-item .box-item .icon-diban {
+  background: -webkit-linear-gradient(#F2C695, #ED933E);
+  background: -o-linear-gradient(#F2C695, #ED933E);
+  background: -moz-linear-gradient(#F2C695, #ED933E);
+  background: linear-gradient(to top,#F2C695, #ED933E);
+}
+.banner1 .banner1-item .box-item .icon-ditan {
+  background: -webkit-linear-gradient(#A4B8F4, #657ED8);
+  background: -o-linear-gradient(#A4B8F4, #657ED8);
+  background: -moz-linear-gradient(#A4B8F4, #657ED8);
+  background: linear-gradient(to top,#A4B8F4, #657ED8);
+}
+.banner1 .banner1-item .box-item .icon-chuanglian {
+  background: -webkit-linear-gradient(#FCCA83, #F79A2F);
+  background: -o-linear-gradient(#FCCA83, #F79A2F);
+  background: -moz-linear-gradient(#FCCA83, #F79A2F);
+  background: linear-gradient(to top,#FCCA83, #F79A2F);
+}
+.banner1 .banner1-item .box-item .icon-jiaju {
+  background: -webkit-linear-gradient(#FAA8CC, #E76198);
+  background: -o-linear-gradient(#FAA8CC, #E76198);
+  background: -moz-linear-gradient(#FAA8CC, #E76198);
+  background: linear-gradient(to top,#FAA8CC, #E76198);
+}
+.banner1 .banner1-item .box-item .icon-shafa {
+  background: -webkit-linear-gradient(#BEB8F8, #7C72EF);
+  background: -o-linear-gradient(#BEB8F8, #7C72EF);
+  background: -moz-linear-gradient(#BEB8F8, #7C72EF);
+  background: linear-gradient(to top,#BEB8F8, #7C72EF);
+}
+.banner1 .banner1-item .box-item .icon-weisheng {
+  background: -webkit-linear-gradient(#C3E582, #86B935);
+  background: -o-linear-gradient(#C3E582, #86B935);
+  background: -moz-linear-gradient(#C3E582, #86B935);
+  background: linear-gradient(to top,#C3E582, #86B935);
+}
+
+.banner1 .banner1-item .box-item .title {
+  /* 必须有宽度 , 下面的 text-overflow: ellipsis; 才会有效*/
+  width: 100%;
+  /* 这里的字体大小 rem 也有不转换的情况, 我们这里统一转换 */
+  font-size: .32rem;
+  line-height: .533333rem;
+  color: #666;
+  text-align: center;
+  white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+/* banner1 end */
+

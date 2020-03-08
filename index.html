@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
+  
+  <title>house service</title>
+  <link rel="icon" href="favicon.ico" type="image/ico"/>
+  <!-- js -->
+  <!-- 初始化字体基数 放在头部优先加载 -->
+  <script src="js/reset-font-size.js"></script>
+
+  <!-- css -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/index.css">
+    <!--插件引入四步骤: 1. 引入插件swiper 的样式库 -->
+  <link rel="stylesheet" href="lib/swiper-4.5.3/css/swiper.min.css">
+</head>
+
+<body>
+
+  <!-- header start -->
+  <div class="header">
+    <div class="header-left">
+      新乡 <span class="header-left-icon"></span>
+    </div>
+    <div class="header-middle"><h1 class="logo">logo</h1></div>
+    <div class="header-right">
+      <span class="header-right-icon"></span>
+    </div>
+  </div>
+  <!-- header end -->
+
+  <!-- banner-big start -->
+  <div class="banner">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <a href="#" class="swiper-slide-link"></a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#" class="swiper-slide-link"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- banner-big end -->
+
+  <!-- banner1 start -->
+  <div class="banner1">
+    <div class="banner1-item">
+      <div class="box-item">
+        <a href="#" class="icon icon-richang"></a>
+        <p class="title">日常保洁</p>
+      </div>
+      <div class="box-item">
+        <a href="#" class="icon icon-kongfang"></a>
+        <p class="title">空房开荒</p>
+      </div>
+      <div class="box-item">
+        <a href="#" class="icon icon-zhuanye"></a>
+        <p class="title">专业擦玻璃</p>
+      </div>
+      <div class="box-item">
+        <a href="#" class="icon icon-chufang"></a>
+        <p class="title">厨房熏蒸</p>
+      </div>
+      <div class="box-item">
+        <a href="#" class="icon icon-diban"></a>
+        <p class="title">地板打蜡</p>
+      </div>
+
+      <div class="box-item">
+        <a href="#" class="icon icon-ditan"></a>
+        <p class="title">地毯清洗</p>
+      </div>
+      <div class="box-item">
+        <a href="#" class="icon icon-chuanglian"></a>
+        <p class="title">窗帘清洗</p>
+      </div>
+      <div class="box-item">
+        <a href="#" class="icon icon-jiaju"></a>
+        <p class="title">家居保养</p>
+      </div>
+      <div class="box-item">
+        <a href="#" class="icon icon-shafa"></a>
+        <p class="title">沙发保养</p>
+      </div>
+      <div class="box-item">
+        <a href="#" class="icon icon-weisheng"></a>
+        <p class="title">卫生间消毒</p>
+      </div>
+    </div>
+  </div>
+  <!-- banner1 end -->
+
+  <!-- container start -->
+  <div class="container"></div>
+  <!-- container end -->
+
+
+  <!-- footer start -->
+  <div class="footer"></div>
+  <!-- footer end -->
+
+  <!-- 插件引入四步骤: 2 此处没有依赖库, 如果有还需要引入依赖库, 仔细看文档-->
+  <!-- 插件引入四步骤: 3 引入swiper 的js核心库 -->
+  <script src="lib/swiper-4.5.3/js/swiper.min.js"></script>
+
+  <!-- 插件引入四步骤: 4 实例化swiper对象 -->
+  <script>        
+    var mySwiper = new Swiper ('.swiper-container', {
+      loop: true,
+      autoplay: {// 操作后不停止自动播放
+        disableOnInteraction: false
+      }
+    })        
+  </script>
+</body>
+</html>
