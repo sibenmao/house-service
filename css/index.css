@@ -116,10 +116,10 @@
   padding-left: .426667rem;
 }
 .swiper-container-1 .swiper-wrapper .swiper-slide {
-  width: 83%;
+  width: 86%;
 }
 .swiper-container-1 .swiper-wrapper .swiper-slide:nth-child(2) {
-  width: 100%;
+  width: 95%;
 }
 
 .banner1 .banner1-item .box-item {
@@ -491,7 +491,7 @@
 .footer .footer-inner li a .nav-icon {
   display: inline-block;
   width: .693333rem /* 26/37.5 */;
-  height: .64rem /* 24/37.5 */;
+  height: .666667rem /* 25/37.5 */;
   margin-bottom: 3px;
   background-image: url(../images/icon/icon2x.png);
   /* 精灵图 缩小一倍 */
@@ -511,8 +511,27 @@
   background-position: -8.453333rem /* 317/37.5 */ -2.56rem /* 96/37.5 */;
 }
 
+.footer .footer-inner li:first-child.active a .nav-icon {
+  background-position: -.266667rem /* 10/37.5 */ -2.613333rem /* 98/37.5 */;
+}
+
+.footer .footer-inner li:nth-child(2).active a .nav-icon {
+  background-position: -1.413333rem /* 53/37.5 */ -2.613333rem /* 98/37.5 */;
+}
+
+.footer .footer-inner li:nth-child(3).active a .nav-icon {
+  background-position: -2.56rem /* 96/37.5 */ -2.613333rem /* 98/37.5 */;
+}
+
+.footer .footer-inner li:last-child.active a .nav-icon {
+  background-position: -3.68rem /* 138/37.5 */ -2.613333rem /* 98/37.5 */;
+}
+
 .footer .footer-inner li a .nav-text {
   font-size: .266667rem /* 10/37.5 */;
   color: #999;
+}
+.footer .footer-inner li.active a .nav-text {
+  color: #333;
 }
 /* footer end */
